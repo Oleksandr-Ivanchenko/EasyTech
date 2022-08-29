@@ -1,1 +1,1 @@
-Starter Pack
+Link to the web-page - https://Oleksandr-Ivanchenko.github.io/EasyTech/;
