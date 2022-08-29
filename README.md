@@ -11,7 +11,7 @@ In order to create this project, I have used the following technology and approa
 
 ✅ BEM methodology,
 
-✅ Responsiveness and cross-browser
+✅ Responsiveness 
 
 Link to the web-page - https://Oleksandr-Ivanchenko.github.io/EasyTech/;
 
