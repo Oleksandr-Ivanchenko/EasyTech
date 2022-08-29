@@ -1,0 +1,62 @@
+@import "../untils/mixin.scss";
+@import "../untils/vars.scss";
+
+.footer {
+  background-color: $gold;
+
+  &__box {
+    display: flex;
+    margin: 0 20px;
+    padding: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    @include onDesktop {
+      height: 70px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    width: 185px;
+    height: 35px;
+    
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: $gold;
+    background: $white;
+    border: unset;
+    border-radius: 46.0973px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    
+    &:hover {
+      box-shadow: 1px -2px 33px -7px rgba(34, 60, 80, 0.89);
+    }
+  }
+
+  &__title {
+    max-width: 210px;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: $white;
+
+    @include onDesktop {
+      max-width: unset;
+    }
+  }
+
+  &__logo {
+    transition-duration: 0.7s;
+
+    &:hover {
+      transform: scale(-0.9, 0.9);
+    }
+  }
+}

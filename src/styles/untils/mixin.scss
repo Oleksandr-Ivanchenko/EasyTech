@@ -1,0 +1,35 @@
+@import "../untils/vars.scss";
+
+@mixin onDesktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 440px) {
+    @content;
+  }
+}
+
+@mixin iconButton($_url) {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #415867;
+  background-image: url($_url);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin iconHover {
+  transition-duration: 0.7s;
+  background-color: $white;
+}
+
+@mixin photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -5,8 +5,298 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EasyTech</title>
+  <link rel="stylesheet" href="./style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
 </head>
-<body>
-  EasyTech
+<body class="page__body">
+  <header class="page__section header">
+    <div class="header__container">
+        <div class="header__background-image"></div>
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img 
+              class="logo__image"
+              src="./images/Logo.png" 
+              alt="EasyTech"
+            >
+          </a>
+        </div>
+        <div class="header__title">
+          <h1>Out-Source Tech Service</h1>
+        </div>
+        <div class="header__subtitle">
+          <h5>Тo customers worldwide.</h5>
+        </div>
+        <form class="header__form" action="#">
+            <div class="header__button">
+              <label for="files" class="header__label">upload your cv</label>
+            </div>
+            <input id="files" name="userfile" accept="image/*" type="file" class="header__input">
+        </form>
+        <div class="header__rectanglse">
+          <img src="./images/pagging.png" alt="rectanglse">
+        </div>
+    </div>
+  </header>
+  <main class="page__section main">
+    <section class="main__info">
+      <div class="about"> 
+        <h2 class="about__title">About</h2>
+        <h3 class="about__subtitle">EasyTech</h3>
+        <p class="about__text">
+          EasyTech  is an international company providing Out-Source Tech  Service to customers worldwide. 
+          The company has recently launched its activity on the market and has the ambition to become one of the fastest Out-Source 
+          Tech  Service companies in the industry. Services are provided in 5 of the most spoken languages in the world – English, 
+          Russian, Arabic, Italian and German.
+        </p>    
+        <p class="about__text about__text--desktop">
+          EasyTech is part of international company providing Out-Source Tech Service to customers worldwide. 
+          For the past 5 years the company has expanded its activities on the market and strives to become one of the best 
+          Out-Source companies in the industry. Services are provided in some of the most spoken languages in the world – 
+          English, Spanish, Arabic, Italian, Russian, German.
+        </p> 
+      </div>
+
+      <div class="join">
+        <div class="join__box">
+          <h3 class="join__title">Join us</h3>
+          <h4 class="join__additional">More Job offers</h4>
+        </div>
+        <div class="join__text">
+          <div class="join__info">
+            <div class="join__number">01
+              <div class="join__slash"></div>
+            </div>
+            <p class="join__label">Backoffice / Payments Specialist/</p>
+            <span class="join__close" role="button"></span>
+          </div>
+          <button 
+            class="join__button" 
+            type="button"
+          >
+          View More
+          <span class="join__icon"></span>
+          </button>
+          <div class="join__moreifo">
+            <p>Resolve and research undelivered payments.</p>
+            <p>
+              Manage anti-money laundering (AML) and know your customer (KYC) processes.
+            </p>
+            <p>
+              Communicate with appropriate internal teams, 
+              when necessary to resolve open issues or questions.
+            </p>
+            <button class="join__view">
+              <div class="join__dotgroup">
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+              </div>
+              View more
+            </button>
+          </div>
+        </div>
+        <div class="join__text">
+          <div class="join__info">
+            <div class="join__number">02
+              <div class="join__slash"></div>
+            </div>
+            <p class="join__label">Our Expirience/</p>
+            <span class="join__close" role="button"></span>
+          </div>
+          <button 
+            class="join__button" 
+            type="button"
+          >
+            View More
+            <span class="join__icon"></span>
+          </button>
+          <div class="join__moreifo">
+            <p>Resolve and research undelivered payments.</p>
+            <p>
+              Manage anti-money laundering (AML) and know your customer (KYC) processes.
+            </p>
+            <p>
+              Communicate with appropriate internal teams, 
+              when necessary to resolve open issues or questions.
+            </p>
+            <button class="join__view">
+              <div class="join__dotgroup">
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+              </div>
+              View more
+            </button>
+          </div>
+        </div>
+        <div class="join__text">
+          <div class="join__info">
+            <div class="join__number">03
+              <div class="join__slash"></div>
+            </div>
+            <p class="join__label">Quality Assurance / Russian-English, Spanish-English/</p>
+            <span class="join__close" role="button"></span>
+          </div>
+          <button 
+            class="join__button" 
+            type="button"
+          >
+            View More
+            <span class="join__icon"></span>
+          </button>
+          <div class="join__moreifo">
+            <p>Resolve and research undelivered payments.</p>
+            <p>
+              Manage anti-money laundering (AML) and know your customer (KYC) processes.
+            </p>
+            <p>
+              Communicate with appropriate internal teams, 
+              when necessary to resolve open issues or questions.
+            </p>
+            <button class="join__view">
+              <div class="join__dotgroup">
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+                <div class="join__dot" role="button"></div>
+              </div>
+              View more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__stories">
+      <div class="stories">
+        <div class="stories__box">
+          <h2 class="stories__title">
+            <img 
+              class="stories__logo"
+              src="./images/Group.png"
+            >
+              Stories
+          </h2>
+          <button class="stories__additional">View more</button>
+        </div>
+        <div class="stories__container">
+          <div class="stories__block">
+            <div class="stories__date">January 24, 2022</div>
+            <div class="stories__label">World's largest and most liquid market</div>
+          </div>
+          <div class="stories__block stories__block--service">
+            <div class="stories__date">January 24, 2022</div>
+            <div class="stories__label">World's largest and most liquid market</div>
+          </div>
+          <div class="stories__block stories__block--career">
+            <div class="stories__date">January 24, 2022</div>
+            <div class="stories__label">World's largest and most liquid market</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__contact">
+      <div class="contact">
+        <h2 class="contact__title">Get in Touch with us</h2>
+        <p class="contact__text">at EasyTech, we value our customers and appreciate hearing how we can improve and better support you.</p>
+        <p class="contact__subtext">If you have any question, do not hesitate to contact us!</p> 
+        <p class="contact__line"></p>
+        <a 
+          href="https://goo.gl/maps/Lu97gYZFvnXD7GkXA" 
+          class="contact__address"
+          target="_blank"
+        >
+          Sofia, ul.“Okolovrasten pat” 251 G, 1715 g.k. Mladost 4
+        </a>
+        <a class="contact__mail" href="mailto:info@easytech.com">
+          info@easytech.com
+        </a>
+        <a href="tel:+359 02 426 36 48" class="contact__tel">+359 02 426 36 48</a>
+      </div>
+      <form action="#" class="contact__form">
+
+        <label class="contact__box">
+          <input
+            name="first"
+            type="text"
+            class="contact__input"
+            required
+          >
+          <div class="contact__placeholder">First Name 
+            <strong class="contact__placeholder-required">*</strong>
+          </div>
+        </label>
+        <label class="contact__box">
+          <input
+            name="last"
+            type="text"
+            class="contact__input"
+            required
+          >
+          <div class="contact__placeholder">Last Name 
+            <strong class="contact__placeholder-required">*</strong>
+          </div>
+        </label>
+        
+        <label class="contact__box">
+          <input
+            name="phone"
+            type="tel"
+            class="contact__input"
+            required
+          >
+          <div class="contact__placeholder">Phone
+            <strong class="contact__placeholder-required">*</strong>
+          </div>
+        </label>
+
+        <label class="contact__box">
+          <input
+            name="email"
+            type="text"
+            class="contact__input"
+            required
+          >
+          <div class="contact__placeholder">Email
+            <strong class="contact__placeholder-required">*</strong>
+          </div>
+        </label>
+      
+        <label class="contact__box contact__box--textarea">
+          <textarea
+            name="message"
+            required
+            class="contact__input contact__input--textarea"
+          ></textarea>
+          <div class="contact__placeholder contact__placeholder--textarea">Your Message
+            <strong class="contact__placeholder-required">*</strong>
+          </div>
+        </label>
+
+        <button class="contact__button" type="submit">
+          send message
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__box">
+      <img 
+        src="./images/megaphone.png" 
+        class="footer__logo" 
+        alt="megaphone"
+      >
+      <h3 class="footer__title">
+        Never miss Another opportunity
+      </h3>
+      <button class="footer__button" type="submit">Create a Job alert</button>
+    </div>
+
+  </footer>
 </body>
 </html>

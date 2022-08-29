@@ -1,0 +1,127 @@
+@import "../../styles/untils/mixin.scss";
+
+.stories {
+  margin: 0 20px;
+
+  @include onTablet {
+    margin-top: 50px;
+  }
+
+  @include onDesktop{
+    margin-top: unset;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 13px 0;
+    gap: 20px;
+    align-items: center;
+    
+    @include onDesktop{
+      min-width: 1170px;
+      margin-top: 55px;
+      gap: 30px;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: $gold;
+    border-bottom: 0.811906px solid rgba(220, 190, 123, 1);
+    padding-bottom: 10px;
+
+    @include onDesktop{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-top: -30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include onDesktop {
+     position: relative;
+     padding: 0 22px;
+     top: 55px;
+     background-color: $white;
+    }
+  }
+
+  &__additional {
+    font-size: 13px;
+    line-height: 160%;
+    margin-bottom: 3px;
+    font-family: 'Inter';
+    color: $gold;
+    background-color: $white;
+    border: unset;
+    cursor: pointer;
+
+    @include onDesktop {
+      position: relative;
+      top: 55px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 280px;
+    height: 373px;
+    padding: 30px 35px;
+    padding-top: 13px;
+    box-sizing: border-box;
+    color: $white;
+    background: linear-gradient(180deg, rgba(8, 32, 48, 0) 30.73%, #082030 100%), url(../../images/Mask.png);
+    transition-duration: 0.7s;
+
+    @include onDesktop{
+      width: 370px;
+      height: 492px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+
+    &--service {
+      background: linear-gradient(180deg, rgba(8, 32, 48, 0) 30.73%, #082030 100%), url(../../images/MaskGroup.png);
+      @include onDesktop{
+        @include photo;
+      }
+    }
+
+    &--career {
+      background: linear-gradient(180deg, rgba(8, 32, 48, 0) 30.73%, #082030 100%), url(../../images/building.png);
+      @include onDesktop{
+        @include photo;
+      }
+    }
+  }
+
+  &__date {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  &__label {
+    max-width: 195px;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    word-break: break-word;
+  }
+}

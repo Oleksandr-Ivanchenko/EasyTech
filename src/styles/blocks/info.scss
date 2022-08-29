@@ -1,0 +1,241 @@
+@import "../untils/mixin.scss";
+@import "../untils/vars.scss";
+
+.main__info {
+  position: relative;
+  top: -55px;
+  height: 900px;
+  background: #082030;
+  background-image: url(../../images/Groupbeck.png);
+  background-position-y: 115px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: polygon(100% 0,100% 0,100% 100%, 0 100%,0 55px);
+
+  @include onTablet {
+    top: 0px;
+  }
+
+  @include onTablet {
+    margin-bottom: -112px;
+    top: -112px;
+    background-image: url(../../images/beck.png);
+    background-size: cover;
+  }
+
+  @include onDesktop {
+    display: flex;
+    height: 100%;
+    gap: 150px;
+    justify-content: center;
+    min-height: 522px;
+    background-size: contain;
+    clip-path: polygon(100% 0,100% 0,100% 100%, 0 100%,0 112px);
+  }
+}
+
+.about {
+  @include onDesktop {
+    margin-top: 87px;
+    max-width: 570px;
+  }
+
+  &__title {
+    padding: 75px 20px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $gold;
+  }
+
+  &__subtitle {
+    padding-left: 42px;
+    font-weight: 400;
+    font-size: 26px;
+    color: $white;
+  }
+
+  &__text {
+    display: block;
+    height: 220px;
+    padding: 24px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $white;
+
+    @include onDesktop {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+
+      @include onDesktop {
+        display: block;
+      } 
+    }
+  }
+}
+
+.join {
+  margin: 20px;
+  line-height: 24px;
+  color: $white;
+
+  @include onDesktop {
+    margin-top: 82px;
+    width: 419px;
+  }
+ 
+  &__box {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 0.811906px solid $greySlash;
+  }
+
+  &__title {
+    line-height: 29px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $gold;
+  }
+
+  &__slash {
+    width: 1px;
+    height: 30px;
+    margin: 0 10px;
+    transform: skew(-15deg);
+    background-color: $greySlash;
+  }
+
+  &__additional {
+    font-size: 12px;
+  }
+
+  &__info {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 11px;
+    justify-content: space-between ;
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 40px;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: $white;
+    background: transparent;
+    border: unset;
+    cursor: pointer;
+
+    &:hover {
+      transition-duration: 0.7s;
+      color: #9bb3c2;
+      .join__icon {
+        @include iconHover;
+      }
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__icon {
+    @include iconButton('../../images/Vector.png');
+  }
+
+  &__close {
+    display: none;
+
+    &--visible {
+      @include iconButton('../../images/Group1.png');
+      display: block;
+      margin: 15px 6px;
+
+      &:hover {
+        @include iconHover;
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    align-items: flex-end;
+    display: flex;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    color: $greySlash;
+  }
+
+  &__label {
+    max-width: 184px;
+    margin: 18px 0 0 40px;
+    word-break: break-word;
+    
+    @include onDesktop {
+      max-width: 270px;
+    }
+  }
+
+  &__text {
+    border-bottom: 0.811906px solid $greySlash;
+    padding-bottom: 12px;
+  }
+
+  &__text:last-child {
+    border: unset;
+  }
+
+  &__moreifo {
+    display: none;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      max-width: 332px;
+      margin-left: 40px;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 160%;
+      color: #8095a4;
+    }
+  }
+
+  &__dotgroup {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+  }
+
+  &__view {
+    width: 65px;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Inter';
+    color: $white;
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+  }
+}
+
